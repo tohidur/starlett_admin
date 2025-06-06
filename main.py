@@ -153,7 +153,7 @@ class AggregatorDataView(ModelView):
 @app.on_event("startup")
 async def startup_event():
     # MongoDB connection with the specified credentials
-    client = AsyncIOMotorClient("mongodb://periscope:UrB%40nP!p3R%402023@localhost:27057/periscope")
+    client = AsyncIOMotorClient("mongodb://periscope:pass%402023@localhost:27057/periscope")
     
     # Initialize beanie with the AggregatorData document
     await init_beanie(database=client.periscope, document_models=[AggregatorData])
